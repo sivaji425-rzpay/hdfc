@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>HDFC</title>
+  </head>
+  <body>
+   <div id="root">
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript">//Default Buttons
+      $("#defaultNextBtn").on("click", function() {
+          $("#collapsePrimary").collapse('show');
+          $("#collapseDefault").collapse('hide');
+      });
+      
+      //Primary Buttons
+      $("#primaryNextBtn").on("click", function() {
+          $("#collapseSuccess").collapse('show');
+          $("#collapsePrimary").collapse('hide');
+      });
+      
+      $("#primaryPrevBtn").on("click", function() {
+          $("#collapseDefault").collapse('show');
+          $("#collapsePrimary").collapse('hide');
+      });
+      
+      //Success Buttons
+      $("#successNextBtn").on("click", function() {
+          $("#collapseInfo").collapse('show');
+          $("#collapseSuccess").collapse('hide');
+      });
+      
+      $("#successPrevBtn").on("click", function() {
+          $("#collapsePrimary").collapse('show');
+          $("#collapseSuccess").collapse('hide');
+      });
+      
+      //Info Buttons
+      $("#infoNextBtn").on("click", function() {
+          $("#collapseWarning").collapse('show');
+          $("#collapseInfo").collapse('hide');
+      });
+      
+      $("#infoPrevBtn").on("click", function() {
+          $("#collapseSuccess").collapse('show');
+          $("#collapseInfo").collapse('hide');
+      });
+      
+      //Warning Buttons
+      $("#warningNextBtn").on("click", function() {
+          $("#collapseDanger").collapse('show');
+          $("#collapseWarning").collapse('hide');
+      });
+      
+      $("#warningPrevBtn").on("click", function() {
+          $("#collapseInfo").collapse('show');
+          $("#collapseWarning").collapse('hide');
+      });
+      
+      //DangerButtons
+      $("#dangerPrevBtn").on("click", function() {
+          $("#collapseWarning").collapse('show');
+          $("#collapseDanger").collapse('hide');
+      });
+      </script>
+  </body>
+</html>
